@@ -18,6 +18,13 @@ while game_is_on:
     screen.bgcolor("black")
     screen.title("SNAKE GAME HEHE")
     screen.tracer(0)
+    user_in= screen.textinput(title="LEVEL", prompt="TYPE LEVEL WHICH YOU WANT: easy, medium or hard")
+    if user_in=='easy':
+        timee=0.2
+    elif user_in=="medium":
+        timee=0.1
+    elif user_in=="hard":
+        timee=0.05
 
     food=Food()
     screen.listen()
@@ -28,13 +35,11 @@ while game_is_on:
     screen.onkey(snk.left,"Left")
     screen.onkey(snk.right,"Right")
     game_on=True
-    
+   
     while game_on:
         screen.update()
         snk.move()
-        time.sleep(0.1)
-
-
+        time.sleep(timee)
 
         if snk.head.distance(food) < 20:
             food.refresh()
