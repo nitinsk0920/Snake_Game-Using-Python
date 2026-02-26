@@ -61,10 +61,10 @@ Turtle Graphics<br>
 Screen module<br>
 OOP principles<br>
 
-## 🔮 Future Improvements
-Add sound effects
-Add high-score saving using file handling
-Add pause feature
-Improve UI styling
+## 🔮 Future Improvements<br>
+Add sound effects<br>
+Add high-score saving using file handling<br>
+Add pause feature<br>
+Improve UI styling<br>
 
 
